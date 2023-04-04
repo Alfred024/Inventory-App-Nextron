@@ -70,6 +70,13 @@ aside i {
 }
 
 /*---------------------COMPONENTS--------------------*/
+.flex-style-cards{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .InfoCard {
     background-color: white;
     border-radius: 10px;
@@ -99,8 +106,6 @@ aside i {
 
 
 .ProductCard {
-    display: flex;
-    align-items: center;
     background-color: white;
     border-radius: 10px;
     border: 1px solid #000;
@@ -115,15 +120,23 @@ aside i {
     color: #5f5f5f;
 }
 
+.CardClient{
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+
 .container-clients{
     display: flex;
     flex-wrap: wrap;
 }
 
-.CardClient{
-    border-radius: 10px;
+.container-buys, .list-products{
+    margin: 0;
 }
 
 .list-products{
     list-style: none;
+    font-weight: bolder;
 }

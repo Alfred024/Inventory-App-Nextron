@@ -2,13 +2,15 @@ import Image from "next/image"
 
 export const ClientCard = () => {
   return (
-    <div className="CardClient">
+    <div className="CardClient flex-style-cards">
       <div className="image image-client">
         <Image 
           src={url}
           width={100} 
           height={100}
-        
+          style={{
+            borderRadius: '5px'
+          }}
         ></Image>
       </div>
 

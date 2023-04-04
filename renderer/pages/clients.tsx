@@ -11,6 +11,8 @@ const clients = () => {
           <ClientCard/>
           <ClientCard/>
           <ClientCard/>
+          <ClientCard/>
+          <ClientCard/>
         </div>
           
         </Layout>
