@@ -4,6 +4,12 @@ import { Layout, LineChartTest } from '../components';
 function Home() {
     return (
         <Layout title='ventas'>
+            <div className='graphicsContainer'>
+              <LineChartTest />
+              <LineChartTest />
+              <LineChartTest />
+              <LineChartTest />
+            </div>
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
 
             {/* //Parte 1: Gráfico de ventas (eje -,+) */}
@@ -17,7 +23,7 @@ function Home() {
 
 
             {/* TEST DE LIBRERÍA ChartJS */}
-            <LineChartTest />
+            
         </Layout>
     );
 };
