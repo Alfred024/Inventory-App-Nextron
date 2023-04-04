@@ -1,10 +1,10 @@
 import React from 'react';
-import { Layout } from '../components';
+import { Layout, LineChartTest } from '../components';
 
 function Home() {
     return (
         <Layout title='ventas'>
-        ventas
+            <LineChartTest />
         </Layout>
     );
 };

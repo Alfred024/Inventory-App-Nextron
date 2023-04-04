@@ -11,8 +11,10 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "chart.js": "^4.2.1",
     "electron-serve": "^1.1.0",
-    "electron-store": "^8.1.0"
+    "electron-store": "^8.1.0",
+    "react-chartjs-2": "^5.2.0"
   },
   "devDependencies": {
     "@emotion/cache": "^11.10.3",
