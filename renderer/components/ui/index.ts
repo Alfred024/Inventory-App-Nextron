@@ -4,3 +4,4 @@ export * from './DoughnutTest';
 export * from './TotalSalesTest';
 export * from './InfoCard';
 export * from './ProductCard';
+export * from './TopClientsTest';

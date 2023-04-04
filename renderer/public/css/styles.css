@@ -105,6 +105,8 @@ aside i {
 }
 
 
+
+
 /* Estilos para el div que contiene los 4 componentes de la página home */
 .graphicsContainer{
     display: grid;
@@ -139,4 +141,15 @@ aside i {
 .ProductCard .price {
     font-size: 13px;
     color: #5f5f5f;
+}
+
+/*  */
+.topClientContainer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.userCard img{
+    width: 120px;
+    height: 120px;
 }

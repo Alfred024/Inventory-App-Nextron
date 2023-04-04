@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, LineChartTest, TotalSalesTest, DoughnutTest } from '../components';
+import { Layout, LineChartTest, TotalSalesTest,DoughnutTest, TopClientsTest } from '../components';
 
 function Home() {
     return (
@@ -9,7 +9,9 @@ function Home() {
               <TotalSalesTest 
                 totalSales={100000}
               />
-              <LineChartTest />
+              <TopClientsTest 
+                clients = {""}
+              />
               <DoughnutTest />
             </div>
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
