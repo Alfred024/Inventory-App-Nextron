@@ -14,7 +14,7 @@ export const Sidebar = () => {
                     <i className="fa-solid fa-store"></i>
                 </NextLink>
             </div>
-            <hr />
+
             <div>
                 <NextLink href="profile">
                     <i className="fa-solid fa-user"></i>
