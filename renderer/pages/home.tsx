@@ -3,7 +3,7 @@ import { Layout, LineChartTest } from '../components';
 
 function Home() {
     return (
-        <Layout title='ventas'>
+        <Layout title='Ventas'>
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
 
             {/* //Parte 1: Gráfico de ventas (eje -,+) */}
