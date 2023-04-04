@@ -23,7 +23,7 @@ export const TopClientsTest = ({clients}) => {
     ];
 
     return (
-        <div className="topClientContainer">
+        <div id='section' className="topClientContainer">
             {topClients.map(todo => (
                 <div className="userCard">
                     <img src={todo.imgProfile} alt="img profile from user" />

@@ -96,7 +96,6 @@ aside i {
     color: #5f5f5f;
 }
 
-
 .ProductCard {
     display: flex;
     align-items: center;
@@ -105,9 +104,15 @@ aside i {
 }
 
 
-
-
 /* Estilos para el div que contiene los 4 componentes de la página home */
+
+#section{
+    margin: 20px 10px;
+    background-color: #b6ffea;
+    border-radius: 10px;
+    /* box-shadow: 0px 10px 20px 5px rgb(191, 189, 189); */
+}
+
 .graphicsContainer{
     display: grid;
     width: 50%;
@@ -116,6 +121,10 @@ aside i {
 }
 
 @media (max-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
+
     .graphicsContainer{
         width: 90%;
         position: relative;
@@ -127,11 +136,31 @@ aside i {
 
 /* Estilos del componente: TotalSalesTest */
 .totalTestContainer{
-    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 120px;
+    border: solid 1px #097355;
+}
+.totalTestContainer div{
+    margin: 0;
+    padding: 15px 10px;
+}
+.totalTestContainer button{
+    width: 80px;
+    height: 40px;
     border-radius: 20px;
-    background-color: lightpink;
-    border-radius: 10px;
-    border: 1px solid #000;
+    border: none;
+    justify-self: end;
+}
+.totalTestContainer div:nth-child(1){
+    background-color: #F3F4FE;
+    color: black;
+}
+.totalTestContainer div:nth-child(2){
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    background-color: #097355;
+    color: white;
 }
 
 .ProductCard .quantity {

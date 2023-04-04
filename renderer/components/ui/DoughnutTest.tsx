@@ -35,5 +35,5 @@ export const data2 = {
 
 
 export const DoughnutTest = () => {
-    return <Doughnut data={data2}/>;
+    return <Doughnut id='section' data={data2}/>;
 }
