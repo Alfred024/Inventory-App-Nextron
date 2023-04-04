@@ -31,3 +31,29 @@ aside i:hover {
     background-color: white;
     border-radius: 60px;
 }
+
+
+/* Estilos para el div que contiene los 4 componentes de la página home */
+.graphicsContainer{
+    display: grid;
+    width: 50%;
+    height: 100%;
+    grid-template-columns: repeat(2, auto);
+}
+
+@media (max-width: 900px) {
+    .graphicsContainer{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto;
+    }
+}
+
+/* Estilos del componente: TotalSalesTest */
+.totalTestContainer{
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color: lightpink;
+}

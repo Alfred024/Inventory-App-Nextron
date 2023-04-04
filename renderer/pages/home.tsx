@@ -1,16 +1,18 @@
 import React from 'react';
-import { Layout, LineChartTest, DoughnutTest } from '../components';
+import { Layout, LineChartTest, TotalSalesTest, DoughnutTest } from '../components';
 
 function Home() {
     return (
         <Layout title='ventas'>
             <div className='graphicsContainer'>
               <LineChartTest />
-              <LineChartTest />
+              <TotalSalesTest 
+                totalSales={100000}
+              />
               <LineChartTest />
               <DoughnutTest />
             </div>
-            
+
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
 
             {/* //Parte 1: Gráfico de ventas (eje -,+) */}
