@@ -21,7 +21,13 @@ aside div {
 }
 
 aside i {
-    margin: 10px 0;
     font-size: 24px;
     color: blueviolet;
+    padding: 10px;
+}
+
+aside i:hover {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 60px;
 }
