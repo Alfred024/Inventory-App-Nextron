@@ -15,7 +15,7 @@ export const Layout: FC<Props> = ({ children, title }) => {
 
             <Sidebar />
 
-            <div style={{marginLeft:'50px'}}>
+            <div style={{marginLeft:'180px'}}>
                 {children}
             </div>
         </>

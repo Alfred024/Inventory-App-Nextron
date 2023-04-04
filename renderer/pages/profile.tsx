@@ -2,7 +2,7 @@ import { Layout } from "../components"
 
 const profile = () => {
     return (
-        <Layout>profile</Layout>
+        <Layout title="Perfil">profile</Layout>
     )
 }
 

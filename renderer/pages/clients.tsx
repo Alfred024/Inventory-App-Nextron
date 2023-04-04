@@ -2,7 +2,7 @@ import { Layout } from "../components"
 
 const clients = () => {
     return (
-        <Layout>clients</Layout>
+        <Layout title="Clientes">clients</Layout>
     )
 }
 

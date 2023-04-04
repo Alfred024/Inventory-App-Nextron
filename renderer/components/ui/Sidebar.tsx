@@ -4,21 +4,47 @@ export const Sidebar = () => {
     return (
         <aside>
             <div>
-                <NextLink href="home">
-                    <i className="fa-solid fa-money-bill"></i>
-                </NextLink>
-                <NextLink href="inventory">
-                    <i className="fa-solid fa-box"></i>
-                </NextLink>
-                <NextLink href="clients">
-                    <i className="fa-solid fa-store"></i>
-                </NextLink>
+                <h3>Inventory.</h3>
             </div>
 
-            <div>
-                <NextLink href="profile">
-                    <i className="fa-solid fa-user"></i>
-                </NextLink>
+            <div className="items">
+                <div className="items-1 hover">
+                    <NextLink href="home">
+                        <div>
+                            <i className="fa-solid fa-money-bill"></i>
+                            Ventas
+                        </div>
+                    </NextLink>
+                    <NextLink href="inventory">
+                        <div>
+                            <i className="fa-solid fa-box"></i>
+                            Inventario
+                        </div>
+                    </NextLink>
+                    <NextLink href="clients">
+                        <div>
+                            <i className="fa-solid fa-store"></i>
+                            Clientes
+                        </div>
+                    </NextLink>
+                </div>
+
+                <div className="items-2 hover">
+                    <NextLink href="profile">
+                        <div>
+                            <i className="fa-solid fa-user"></i>
+                            Perfil
+                        </div>
+
+                    </NextLink>
+
+                    <NextLink href="help">
+                        <div>
+                            <i className="fa-solid fa-user"></i>
+                            Ayuda
+                        </div>
+                    </NextLink>
+                </div>
             </div>
         </aside>
     )

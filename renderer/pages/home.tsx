@@ -12,7 +12,6 @@ function Home() {
               <LineChartTest />
               <DoughnutTest />
             </div>
-
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
 
             {/* //Parte 1: Gráfico de ventas (eje -,+) */}
