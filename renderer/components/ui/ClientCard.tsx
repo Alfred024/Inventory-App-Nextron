@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export const ClientCard = () => {
+export const ClientCard = ({name}) => {
   return (
     <div className="CardClient flex-style-cards">
       <div className="image image-client">
@@ -15,7 +15,7 @@ export const ClientCard = () => {
       </div>
 
       <div className="infoClient">
-        <p>Nombre: Uriel</p>
+        <p>Nombre: {name}</p>
         <div className="container-buys">
           <p>Productos Adquiridos: </p>
           
