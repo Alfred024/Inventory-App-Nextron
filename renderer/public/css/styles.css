@@ -125,7 +125,7 @@ aside i {
 
 .ProductCard {
     background-color: white;
-    border-radius: 60px;
+    border-radius: 10px;
 }
 
 .ProductCard .quantity {
