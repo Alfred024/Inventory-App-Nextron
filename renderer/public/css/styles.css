@@ -103,13 +103,23 @@ aside i {
     border-radius: 60px;
 }
 
+.ProductCard .quantity {
+    font-size: 18px;
+}
+.ProductCard .price {
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
 
 /* Estilos para el div que contiene los 4 componentes de la página home */
 
 #section{
     margin: 20px 10px;
-    background-color: #b6ffea;
-    border-radius: 10px;
+    /* padding: 10px 20px; */
+    background-color: #e8fff6;
+    border-radius: 20px;
+    border: solid 1px #097355;
     /* box-shadow: 0px 10px 20px 5px rgb(191, 189, 189); */
 }
 
@@ -117,33 +127,31 @@ aside i {
     display: grid;
     width: 50%;
     height: 100%;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(10, 100px) !important;
+    grid-template-rows: repeat(7, 100px);
+    gap: 5px;
 }
 
-@media (max-width: 900px) {
-    *{
-        overflow-x: hidden;
-    }
-
-    .graphicsContainer{
-        width: 90%;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: auto;
-    }
+/*Posicionamiento en el grid*/
+/* row-s/column-s/row-e/column-e */
+.lineChartContainer{
+    grid-area: 1/1/4/6;
 }
 
-/* Estilos del componente: TotalSalesTest */
+.totalTestContainer{
+    grid-area: 1/6/3/11;
+}
 .totalTestContainer{
     display: grid;
     grid-template-columns: 40% 60%;
     height: 120px;
-    border: solid 1px #097355;
+    background-color: #F3F4FE;
+    /* border: solid 1px #097355;
+    border-radius: 20px; */
+    border: none;
 }
-.totalTestContainer div{
+ .totalTestContainer div{
     margin: 0;
-    padding: 15px 10px;
 }
 .totalTestContainer button{
     width: 80px;
@@ -155,30 +163,50 @@ aside i {
 .totalTestContainer div:nth-child(1){
     background-color: #F3F4FE;
     color: black;
+    border-radius: 20px 0px 0px 20px;
 }
 .totalTestContainer div:nth-child(2){
     display: grid;
     grid-template-rows: repeat(2, auto);
     background-color: #097355;
     color: white;
+    border-radius: 0px 20px 20px 0px;
 }
 
-.ProductCard .quantity {
-    font-size: 18px;
-}
 
-.ProductCard .price {
-    font-size: 13px;
-    color: #5f5f5f;
-}
-
-/*  */
+/* ------------------- */
 .topClientContainer{
+    grid-area: 4/1/8/5;
     display: grid;
     grid-template-columns: repeat(2, auto);
 }
-
+.userCard{
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
 .userCard img{
     width: 120px;
     height: 120px;
 }
+/* -------------------- */
+
+
+
+ /* Media Queries de la sección de home*/
+/* @media (max-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
+
+    .graphicsContainer{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto;
+    }
+} */
+
