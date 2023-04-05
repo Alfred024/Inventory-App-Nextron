@@ -137,6 +137,22 @@ aside i {
 .lineChartContainer{
     grid-area: 1/1/4/6;
 }
+@media (max-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
+
+    /* aside{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+    } */
+
+.totalTestContainer{
+    grid-area: 1/6/3/11;
+}
+}
 
 .totalTestContainer{
     grid-area: 1/6/3/11;
@@ -144,6 +160,8 @@ aside i {
 .totalTestContainer{
     display: grid;
     grid-template-columns: 40% 60%;
+    height: 130px;
+    border: solid 1px #097355;
     height: 120px;
     background-color: #F3F4FE;
     /* border: solid 1px #097355;
@@ -159,10 +177,12 @@ aside i {
     border-radius: 20px;
     border: none;
     justify-self: end;
+    font-weight: 700;
 }
 .totalTestContainer div:nth-child(1){
     background-color: #F3F4FE;
     color: black;
+    border-radius: 10px 0px 0px 10px;
     border-radius: 20px 0px 0px 20px;
 }
 .totalTestContainer div:nth-child(2){
@@ -170,15 +190,35 @@ aside i {
     grid-template-rows: repeat(2, auto);
     background-color: #097355;
     color: white;
+    border-radius: 0px 10px 10px 0px;
     border-radius: 0px 20px 20px 0px;
 }
 
 
-/* ------------------- */
+.ProductCard .price {
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
+/* Estilos del componente: T */
 .topClientContainer{
     grid-area: 4/1/8/5;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    background-color: #F3F4FE;
+}
+.userCard{
+    background-color: unset;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.userCard{
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
 .userCard{
     padding: 10px;
