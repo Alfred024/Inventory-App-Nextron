@@ -1,14 +1,16 @@
-import React from 'react'
-import { InfoCard, Layout, ProductCard } from '../components'
+import { AddButton, InfoCard, Layout, ProductCard, SeachInput } from '../components'
 
 const inventory = () => {
   return (
     <Layout title='Inventario'>
       <div id='Inventory'>
-        <h1>Inventario</h1>
-        <hr />
+        <div className='flex-row space-between'>
+          <h1>Inventario</h1>
+          <SeachInput />
+        </div>
 
-        <div className='topInfo'>
+
+        <div className='topInfo mb-50'>
           {/* Cantidad total de productos */}
           <InfoCard number={54} text='en existencia'>
             <i className="fa-solid fa-boxes-stacked"></i>
@@ -18,13 +20,8 @@ const inventory = () => {
           <InfoCard number={10} text='registrados'>
             <i className="fa-solid fa-list"></i>
           </InfoCard>
-
-          {/* Buscar producto */}
-          <div>
-            <input type="text" />
-          </div>
         </div>
-        <hr />
+
 
         <div className='products'>
           {/* Listado de producto con foto, nombre, precio y cantidad */}
@@ -36,6 +33,8 @@ const inventory = () => {
       </div>
 
 
+      {/* Botón para añadir producto */}
+      <AddButton />
 
 
     </Layout>

@@ -4,7 +4,7 @@ export const Sidebar = () => {
     return (
         <aside>
             <div>
-                <h3>Inventory.</h3>
+                <h3>Kenai.</h3>
             </div>
 
             <div className="items">
