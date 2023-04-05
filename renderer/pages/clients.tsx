@@ -1,8 +1,23 @@
-import { Layout } from "../components"
+import { ClientCard, InfoCard, Layout } from "../components"
 
 const clients = () => {
     return (
-        <Layout title="Clientes">clients</Layout>
+        <Layout title="Clientes">
+            <InfoCard number={10} text='Clientes Totales'>
+            <i className="fa-solid fa-list"></i>
+          </InfoCard>
+
+        <div className="container-clients">
+          <ClientCard/>
+          <ClientCard/>
+          <ClientCard/>
+          <ClientCard/>
+          <ClientCard/>
+        </div>
+          
+        </Layout>
+
+       
     )
 }
 

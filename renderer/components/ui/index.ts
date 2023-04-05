@@ -5,3 +5,4 @@ export * from './TotalSalesTest';
 export * from './InfoCard';
 export * from './ProductCard';
 export * from './TopClientsTest';
+export * from './ClientCard'
