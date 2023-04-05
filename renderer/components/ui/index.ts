@@ -6,3 +6,6 @@ export * from './InfoCard';
 export * from './ProductCard';
 export * from './TopClientsTest';
 export * from './ClientCard'
+export * from './ClientCard';
+export * from './AddButton';
+export * from './SeachInput';
