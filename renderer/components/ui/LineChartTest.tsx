@@ -55,5 +55,5 @@ export const data = {
 };
 
 export const LineChartTest = () => {
-    return <Line options={options} data={data} />;
+    return <Line id='section' className='lineChartContainer' options={options} data={data} />;
 }

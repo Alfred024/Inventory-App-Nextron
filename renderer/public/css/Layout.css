@@ -1,0 +1,16 @@
+.graphicsContainer{
+    display: grid;
+    width: 50%;
+    height: 100%;
+    grid-template-columns: repeat(2, auto);
+}
+
+@media (max-width: 900px) {
+    .graphicsContainer{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: auto;
+    }
+}
