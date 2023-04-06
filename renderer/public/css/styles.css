@@ -136,23 +136,18 @@ aside i {
     color: #5f5f5f;
 }
 
-
+/*----------------------------------------------------------------------------*/
 /* Estilos para el div que contiene los 4 componentes de la página home */
-
 #section{
-    /* margin: 20px 10px; */
     background-color: white;
     border-radius: 10px;
-    /* margin: 10px; */
-    /* padding: 10px; */
     /* box-shadow: 0px 10px 20px 5px rgb(191, 189, 189); */
 }
 
 .graphicsContainer{
+    padding: 10vh 0%;
     display: grid;
-    width: 50%;
-    height: 100%;
-    grid-template-columns: repeat(9, 100px) !important;
+    grid-template-columns: repeat(9, 100px);
     grid-template-rows: repeat(5, 100px);
     gap: 5px;
 }
@@ -163,7 +158,7 @@ aside i {
 }
 .totalTestContainer{
     /* margin: 20px 10px; */
-    grid-area: 1/6/3/10;
+    grid-area: 1/5/3/10;
     display: grid;
     grid-template-columns: 40% 60%;
     height: 100px;
@@ -207,63 +202,37 @@ aside i {
 .topClientContainer .userCard img{
     width: 100px;
 }
-/* .userCard{
-    background-color: unset;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard{
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard{
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard img{
-    width: 120px;
-    height: 120px;
-} */
-
 .doughnutContainer{
     grid-area: 2/6/6/10;
     width: 400px;
     height: 400px;
 }
 
-
+@media (max-width: 1000px) {
+    *{
+        overflow-x: hidden;
+    }
+    .graphicsContainer{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .doughnutContainer{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .ProductCard .price {
     font-size: 13px;
     color: #5f5f5f;
 }
 
-/* -------------------- */
-
-
-
- /* Media Queries de la sección de home*/
-/* @media (max-width: 900px) {
-    *{
-        overflow-x: hidden;
-    }
-
-    .graphicsContainer{
-        width: 90%;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: auto;
-    }
-} */
-
+/*----------------------------------------------------------------------------*/
 .CardClient{
     padding: 5px;
     border: 1px solid #000;
@@ -446,5 +415,13 @@ aside i {
         height: 200px;
         flex-direction: row;
     } */
+
+    .graphicsContainer{
+        /* width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; */
+        grid-template-columns: auto;
+    }
 
 }
