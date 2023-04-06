@@ -140,7 +140,7 @@ aside i {
 /* Estilos para el div que contiene los 4 componentes de la página home */
 
 #section{
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
     background-color: white;
     border-radius: 10px;
     /* margin: 10px; */
@@ -153,17 +153,16 @@ aside i {
     width: 50%;
     height: 100%;
     grid-template-columns: repeat(9, 100px) !important;
-    grid-template-rows: repeat(7, 100px);
+    grid-template-rows: repeat(5, 100px);
     gap: 5px;
 }
 /*Posicionamiento en el grid*/
 /* row-s/column-s/row-e/column-e */
 .lineChartContainer{
-    grid-area: 1/1/4/6;
+    grid-area: 1/1/3/6;
 }
-
 .totalTestContainer{
-    margin: 20px 10px;
+    /* margin: 20px 10px; */
     grid-area: 1/6/3/10;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -172,7 +171,7 @@ aside i {
     background-color: #F3F4FE;
     border: none;
 }
- .totalTestContainer div{
+.totalTestContainer div{
     margin: 0;
 }
 .totalTestContainer button{
@@ -195,23 +194,20 @@ aside i {
     color: white;
     border-radius: 0px 10px 10px 0px;
 }
-.doughnutContainer{
-    grid-area: 3/6/8/10 !important;
-}
-
-.ProductCard .price {
-    font-size: 13px;
-    color: #5f5f5f;
-}
-
-/* Estilos del componente: T */
 .topClientContainer{
-    grid-area: 4/1/8/5;
+    grid-area: 3/1/6/6;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    place-items: center;
     background-color: #F3F4FE;
 }
-.userCard{
+.topClientContainer .userCard{
+    width: 40%;
+}
+.topClientContainer .userCard img{
+    width: 100px;
+}
+/* .userCard{
     background-color: unset;
     display: flex;
     flex-direction: column;
@@ -234,7 +230,21 @@ aside i {
 .userCard img{
     width: 120px;
     height: 120px;
+} */
+
+.doughnutContainer{
+    grid-area: 2/6/6/10;
+    width: 400px;
+    height: 400px;
 }
+
+
+
+.ProductCard .price {
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
 /* -------------------- */
 
 
