@@ -29,7 +29,7 @@ export const options = {
         },
         title: {
             display: true,
-            text: 'Chart.js Line Chart',
+            text: 'Ventas de productos',
         },
     },
 };
@@ -40,13 +40,13 @@ export const data = {
     labels,
     datasets: [
         {
-            label: 'Dataset 1',
+            label: 'Producto 1',
             data: [10, 20, 10, 50, 30, 45],
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.5)',
         },
         {
-            label: 'Dataset 2',
+            label: 'Producto 2',
             data: [5, 50, 10, 45, 67, 82, 5],
             borderColor: 'rgb(53, 162, 235)',
             backgroundColor: 'rgba(53, 162, 235, 0.5)',
@@ -55,5 +55,5 @@ export const data = {
 };
 
 export const LineChartTest = () => {
-    return <Line id='section' className='lineChartContainer' options={options} data={data} />;
+    return <Line id='section' options={options} data={data} />;
 }

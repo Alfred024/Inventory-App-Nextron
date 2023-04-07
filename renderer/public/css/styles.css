@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
+/*VARIABLES*/
+:root {
+    --color-primary: #097355;
+    --color-secondary: #10B981;
+}
+
 * {
     padding: 0;
     margin: 3px;
@@ -16,7 +22,7 @@ aside {
     flex-direction: column;
     height: 95%;
     width: 150px;
-    background-color: #097355;
+    background-color: var(--color-secondary);
     padding: 10px;
     border-radius: 10px;
     color: white;
@@ -76,6 +82,14 @@ aside i {
     align-items: center;
 }
 
+.btn-primary {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 /*-----------------------PAGES-----------------------*/
 
 /*INVENTORY*/
@@ -106,7 +120,7 @@ aside i {
 
 .InfoCard i {
     font-size: 60px;
-    color: #097355;
+    color: var(--color-secondary);
 }
 
 .InfoCard .info {
@@ -131,161 +145,158 @@ aside i {
 .ProductCard .quantity {
     font-size: 18px;
 }
+
 .ProductCard .price {
     font-size: 13px;
     color: #5f5f5f;
 }
 
-
-/* Estilos para el div que contiene los 4 componentes de la página home */
-
-#section{
-    margin: 20px 10px;
-    /* padding: 10px 20px; */
-    background-color: #e8fff6;
+.sales-card {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    border: solid 1px #097355;
-    /* box-shadow: 0px 10px 20px 5px rgb(191, 189, 189); */
 }
 
-.graphicsContainer{
-    display: grid;
-    width: 50%;
-    height: 100%;
-    grid-template-columns: repeat(10, 100px) !important;
-    grid-template-rows: repeat(7, 100px);
-    gap: 5px;
+.sales-card .title {
+    display: flex;
+    align-items: center;
 }
 
-/*Posicionamiento en el grid*/
-/* row-s/column-s/row-e/column-e */
-.lineChartContainer{
-    grid-area: 1/1/4/6;
-}
-@media (max-width: 900px) {
-    *{
-        overflow-x: hidden;
-    }
-
-    /* aside{
-        position: relative;
-        width: 100%;
-        height: 200px;
-        flex-direction: row;
-    } */
-
-.totalTestContainer{
-    grid-area: 1/6/3/11;
-}
+.sales-card .title span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--color-secondary);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 9999px;
 }
 
-.totalTestContainer{
-    grid-area: 1/6/3/11;
-}
-.totalTestContainer{
-    display: grid;
-    grid-template-columns: 40% 60%;
-    height: 130px;
-    border: solid 1px #097355;
-    height: 120px;
-    background-color: #F3F4FE;
-    /* border: solid 1px #097355;
-    border-radius: 20px; */
-    border: none;
-}
- .totalTestContainer div{
-    margin: 0;
-}
-.totalTestContainer button{
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
-    border: none;
-    justify-self: end;
-    font-weight: 700;
-}
-.totalTestContainer div:nth-child(1){
-    background-color: #F3F4FE;
-    color: black;
-    border-radius: 10px 0px 0px 10px;
-    border-radius: 20px 0px 0px 20px;
-}
-.totalTestContainer div:nth-child(2){
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    background-color: #097355;
+.sales-card .title span i {
     color: white;
-    border-radius: 0px 10px 10px 0px;
-    border-radius: 0px 20px 20px 0px;
 }
 
-
-.ProductCard .price {
-    font-size: 13px;
-    color: #5f5f5f;
+.sales-card .title-text {
+    margin-left: 0.5rem;
+    color: #374151;
+    font-size: 18px;
 }
 
-/* Estilos del componente: T */
-.topClientContainer{
-    grid-area: 4/1/8/5;
+.sales-card .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sales-card .data p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #1F2937;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.doughnut-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 87%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Estilos para el div que contiene los 4 componentes de la página home */
+#section {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.graphicsContainer {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    background-color: #F3F4FE;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+    height: 100%;
 }
-.userCard{
-    background-color: unset;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard{
+
+.topClientContainer {
     padding: 10px;
+    display: flex;
+    background-color: #fff;
     border-radius: 20px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.topClientContainer .userCard {
+    width: 50%;
     display: flex;
     flex-direction: column;
     place-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border: solid 3px var(--color-secondary);
+    padding: 0px 10px;
+    color: black;
 }
-.userCard{
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+
+.topClientContainer .userCard img {
+    width: 100%;
+    margin: 5px;
+    border-bottom: solid 1px var(--color-secondary);
 }
-.userCard img{
-    width: 120px;
-    height: 120px;
-}
-/* -------------------- */
 
-
-
- /* Media Queries de la sección de home*/
-/* @media (max-width: 900px) {
-    *{
+@media (max-width: 1000px) {
+    * {
         overflow-x: hidden;
     }
 
-    .graphicsContainer{
+    .graphicsContainer {
         width: 90%;
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
     }
-} */
 
-.CardClient{
+    .doughnutContainer {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.ProductCard .price {
+    font-size: 13px;
+    color: #5f5f5f;
+}
+
+/*----------------------------------------------------------------------------*/
+.CardClient {
+    display: flex;
+    flex-direction: row;
     padding: 5px;
-    border: 1px solid #000;
-    border-radius: 10px;
+    background-color: white;
+    /* border: 1px solid var(--color-secondary); */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+.CardClient img{
+    border-radius: 50px;
 }
 
 
 .container-clients {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 10px;
 }
 
 .container-buys,
@@ -444,4 +455,26 @@ aside i {
 
 .form button:hover {
     background-color: #08644a;
+}
+
+@media (max-width: 900px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    /* aside{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+    } */
+
+    .graphicsContainer {
+        /* width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; */
+        grid-template-columns: auto;
+    }
+
 }
