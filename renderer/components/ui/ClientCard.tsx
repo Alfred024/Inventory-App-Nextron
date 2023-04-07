@@ -2,26 +2,22 @@ import Image from "next/image"
 
 export const ClientCard = () => {
   return (
-    <div className="CardClient flex-style-cards">
-      <div className="image image-client">
-        <Image 
+    <div className="CardClient">
+      <div>
+        <Image
           src={url}
-          width={100} 
-          height={100}
-          style={{
-            borderRadius: '5px'
-          }}
-        ></Image>
+          width={150}
+          height={150} />
       </div>
 
-      <div className="infoClient">
+      <div>
         <p>Nombre: Uriel</p>
         <div className="container-buys">
           <p>Productos Adquiridos: </p>
-          
+
           <ul className="list-products">
             {
-              compras.map( compra => (
+              compras.map(compra => (
                 <li key={compra}>{compra}</li>
               ))
             }
