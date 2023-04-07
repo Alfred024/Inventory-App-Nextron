@@ -136,64 +136,37 @@ aside i {
     color: #5f5f5f;
 }
 
-
+/*----------------------------------------------------------------------------*/
 /* Estilos para el div que contiene los 4 componentes de la página home */
-
 #section{
-    margin: 20px 10px;
-    /* padding: 10px 20px; */
-    background-color: #e8fff6;
-    border-radius: 20px;
-    border: solid 1px #097355;
+    background-color: white;
+    border-radius: 10px;
     /* box-shadow: 0px 10px 20px 5px rgb(191, 189, 189); */
 }
 
 .graphicsContainer{
+    padding: 10vh 0%;
     display: grid;
-    width: 50%;
-    height: 100%;
-    grid-template-columns: repeat(10, 100px) !important;
-    grid-template-rows: repeat(7, 100px);
+    grid-template-columns: repeat(9, 100px);
+    grid-template-rows: repeat(5, 100px);
     gap: 5px;
 }
-
 /*Posicionamiento en el grid*/
 /* row-s/column-s/row-e/column-e */
 .lineChartContainer{
-    grid-area: 1/1/4/6;
-}
-@media (max-width: 900px) {
-    *{
-        overflow-x: hidden;
-    }
-
-    /* aside{
-        position: relative;
-        width: 100%;
-        height: 200px;
-        flex-direction: row;
-    } */
-
-.totalTestContainer{
-    grid-area: 1/6/3/11;
-}
-}
-
-.totalTestContainer{
-    grid-area: 1/6/3/11;
+    grid-area: 1/1/3/6;
 }
 .totalTestContainer{
+    /* margin: 20px 10px; */
+    grid-area: 1/5/3/10;
     display: grid;
     grid-template-columns: 40% 60%;
-    height: 130px;
+    height: 100px;
     border: solid 1px #097355;
-    height: 120px;
     background-color: #F3F4FE;
-    /* border: solid 1px #097355;
-    border-radius: 20px; */
     border: none;
 }
- .totalTestContainer div{
+.totalTestContainer div{
     margin: 0;
 }
 .totalTestContainer button{
@@ -205,10 +178,9 @@ aside i {
     font-weight: 700;
 }
 .totalTestContainer div:nth-child(1){
-    background-color: #F3F4FE;
+    background-color: white;
     color: black;
     border-radius: 10px 0px 0px 10px;
-    border-radius: 20px 0px 0px 20px;
 }
 .totalTestContainer div:nth-child(2){
     display: grid;
@@ -216,65 +188,69 @@ aside i {
     background-color: #097355;
     color: white;
     border-radius: 0px 10px 10px 0px;
-    border-radius: 0px 20px 20px 0px;
+}
+.topClientContainer{
+    grid-area: 3/1/6/6;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    background-color: #F3F4FE;
+    height: fit-content;
+}
+.topClientContainer label{
+    width: 100%;
+    text-align: center;
+    grid-area: 1/1/2/3;
+    color: white;
+    background-color: #08644a;
+}
+.topClientContainer .userCard{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: #097355;
+    border-radius: 10px;
+    border: solid 3px #14dda4;
+    padding: 0px 10px;
+    color: white;
+}
+.topClientContainer .userCard img{
+    width: 100%;
+    border-bottom: solid 2px #14dda4;
+}
+.doughnutContainer{
+    grid-area: 2/6/6/10;
+    width: 400px;
+    height: 400px;
 }
 
+@media (max-width: 1000px) {
+    *{
+        overflow-x: hidden;
+    }
+    .graphicsContainer{
+        width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .doughnutContainer{
+        width: 300px;
+        height: 300px;
+    }
+}
 
 .ProductCard .price {
     font-size: 13px;
     color: #5f5f5f;
 }
 
-/* Estilos del componente: T */
-.topClientContainer{
-    grid-area: 4/1/8/5;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    background-color: #F3F4FE;
-}
-.userCard{
-    background-color: unset;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard{
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard{
-    padding: 10px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.userCard img{
-    width: 120px;
-    height: 120px;
-}
-/* -------------------- */
-
-
-
- /* Media Queries de la sección de home*/
-/* @media (max-width: 900px) {
-    *{
-        overflow-x: hidden;
-    }
-
-    .graphicsContainer{
-        width: 90%;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-columns: auto;
-    }
-} */
-
+/*----------------------------------------------------------------------------*/
 .CardClient{
     padding: 5px;
     border: 1px solid #000;
@@ -444,4 +420,26 @@ aside i {
 
 .form button:hover {
     background-color: #08644a;
+}
+
+@media (max-width: 900px) {
+    *{
+        overflow-x: hidden;
+    }
+
+    /* aside{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        flex-direction: row;
+    } */
+
+    .graphicsContainer{
+        /* width: 90%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto; */
+        grid-template-columns: auto;
+    }
+
 }

@@ -5,14 +5,18 @@ function Home() {
     return (
         <Layout title='ventas'>
             <div className='graphicsContainer'>
-              <LineChartTest />
+              <div className='lineChartContainer'>
+                <LineChartTest />
+              </div>
               <TotalSalesTest 
                 totalSales={100000}
               />
               <TopClientsTest 
                 clients = {""}
               />
-              <DoughnutTest />
+              <div className='doughnutContainer'>
+                <DoughnutTest />
+              </div>
             </div>
             {/*DIVIDIR PANTALLA EN 4 PARTES */}
 

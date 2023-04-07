@@ -2,7 +2,9 @@ import NextLink from 'next/link';
 
 export const TotalSalesTest = ({totalSales}) => {
     return(
-        <div id='section' className='totalTestContainer'>
+        <div 
+        //id='section' 
+        className='totalTestContainer'>
             <div>
                 <p>Ventas totales: </p>
             </div>
