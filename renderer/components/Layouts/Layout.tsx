@@ -1,10 +1,12 @@
 import Head from "next/head"
-import { FC, PropsWithChildren } from "react"
+import { FC, PropsWithChildren, useEffect } from "react"
 import { Sidebar } from "../ui"
 
 interface Props extends PropsWithChildren {
     title?: string
 }
+
+
 
 export const Layout: FC<Props> = ({ children, title }) => {
     return (
@@ -15,7 +17,9 @@ export const Layout: FC<Props> = ({ children, title }) => {
 
             <Sidebar />
 
-            <div style={{marginLeft:'180px'}}>
+            <div 
+            className="layout"
+            >
                 {children}
             </div>
         </>

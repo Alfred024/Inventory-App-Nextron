@@ -1,28 +1,25 @@
 import Image from "next/image"
+import { CSSProperties } from "react"
+
+const styles: CSSProperties = {
+  display: 'flex',
+  justifyContent: 'center'
+}
 
 export const ClientCard = ({name}) => {
   return (
     <div className="CardClient">
-      <div>
+      <div style={ styles }>
         <Image
+          
           src={url}
-          width={150}
-          height={150} />
+          width={90}
+          height={90} />
       </div>
 
-      <div>
-        <p>Nombre: Uriel</p>
-        <div className="container-buys">
-          <p>Productos Adquiridos: </p>
 
-          <ul className="list-products">
-            {
-              compras.map(compra => (
-                <li key={compra}>{compra}</li>
-              ))
-            }
-          </ul>
-        </div>
+      <div style={ styles }>
+        <p>Nombre: {name}</p>
       </div>
 
     </div>
