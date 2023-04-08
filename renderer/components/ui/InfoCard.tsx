@@ -11,10 +11,12 @@ export const InfoCard: FC<Props> = ({ children, number, text }) => {
             <div>
                 {children}
             </div>
+
             <div className="info">
                 <p className="number">{number}</p>
                 <p className="text">{text}</p>
             </div>
+       
         </div>
     )
 }

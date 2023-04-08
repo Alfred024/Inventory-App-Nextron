@@ -19,6 +19,8 @@ const clients = () => {
             <i className="fa-solid fa-list"></i>
           </InfoCard>
 
+          
+
         <div className="container-clients">
           {
             example.map( cliente => (

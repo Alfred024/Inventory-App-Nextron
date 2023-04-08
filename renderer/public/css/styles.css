@@ -117,7 +117,6 @@ aside i {
     background-color: white;
     border-radius: 10px;
     display: flex;
-    flex-direction: row;
     padding: 10px;
 }
 
@@ -138,6 +137,10 @@ aside i {
 .InfoCard .text {
     font-size: 15px;
     color: #5f5f5f;
+}
+
+.arrow-show-aside{
+    font-size: 12px;
 }
 
 .ProductCard {
@@ -308,7 +311,7 @@ aside i {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .add-button {
@@ -477,25 +480,6 @@ aside i {
         margin-left: auto;
         margin-right: auto; */
         grid-template-columns: auto;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-    .container-clients {
-        gap: 30px;
-    }
-
-    .CardClient:hover{
-        translate: 0 0;
-    }
-}
-@media screen and (max-width: 576px) {
-    aside{
-        left: 100%;
-    }
-    .layout{
-        margin-left: 0;
     }
 
 }
