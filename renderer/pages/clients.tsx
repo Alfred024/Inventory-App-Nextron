@@ -1,23 +1,35 @@
-import { ClientCard, InfoCard, Layout } from "../components"
+import { ClientCard, InfoCard, Layout, SeachInput } from "../components"
+const example = [
+  'Uriel',
+  'Leal',
+  'Alfredito',
+  'Chaires',
+  'Osqui',
+  'Morales',
+]
+
+
 
 const clients = () => {
+
+   
     return (
         <Layout title="Clientes">
             <InfoCard number={10} text='Clientes Totales'>
             <i className="fa-solid fa-list"></i>
           </InfoCard>
 
+          
+
         <div className="container-clients">
-          <ClientCard/>
-          <ClientCard/>
-          <ClientCard/>
-          <ClientCard/>
-          <ClientCard/>
+          {
+            example.map( cliente => (
+              <ClientCard  name={cliente}/>
+            ))
+          }
         </div>
           
-        </Layout>
-
-       
+        </Layout>  
     )
 }
 
