@@ -1,5 +1,4 @@
 import React from "react";
-import NextLink from 'next/link';
 
 export const TopClientsTest = ({clients}) => {
 
@@ -25,7 +24,7 @@ export const TopClientsTest = ({clients}) => {
     return (
         <div className="topClientContainer">
             {topClients.map(todo => (
-                <div className="userCard">
+                <div className="userCard" key={todo.userName}>
                     <img src={todo.imgProfile} alt="img profile from user" />
                     <p>{todo.userName}</p>
                 </div>

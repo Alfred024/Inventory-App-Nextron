@@ -24,7 +24,7 @@ const clients = () => {
         <div className="container-clients">
           {
             example.map( cliente => (
-              <ClientCard  name={cliente}/>
+              <ClientCard  name={cliente} key={cliente}/>
             ))
           }
         </div>

@@ -8,7 +8,6 @@ export const SeachInput = () => {
             <input 
                 placeholder="Search" 
                 type="search" 
-                
             />
         </div>
     )

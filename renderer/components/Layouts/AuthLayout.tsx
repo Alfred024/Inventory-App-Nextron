@@ -1,10 +1,10 @@
 import Head from "next/head"
-import { PropsWithChildren } from "react"
+import { FC, PropsWithChildren } from "react"
 
 interface Props extends PropsWithChildren {
     title?: string
 }
-export const AuthLayout = ({ children, title }) => {
+export const AuthLayout: FC<Props> = ({ children, title }) => {
     return (
         <>
             <Head>

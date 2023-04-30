@@ -1,6 +1,6 @@
-appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+appId: luisrrleal.com
+productName: Kenai App
+copyright: Copyright © 2023 Luis Leal
 directories:
   output: dist
   buildResources: resources

@@ -1,6 +1,11 @@
 import NextLink from 'next/link';
+import { AuthContext } from '../../context/auth';
+import { useContext } from 'react';
 
 export const Sidebar = () => {
+
+    const { onLogout } = useContext(AuthContext);
+
     return (
         <aside>
             <div>
@@ -9,7 +14,7 @@ export const Sidebar = () => {
 
             <div className="items">
                 <div className="items-1 hover">
-                    <NextLink href="home">
+                    <NextLink href="/">
                         <div>
                             <i className="fa-solid fa-money-bill"></i>
                             Ventas
@@ -29,7 +34,7 @@ export const Sidebar = () => {
                     </NextLink>
                 </div>
 
-                <div className="items-2 hover">
+                <div className="items-1 hover">
                     <NextLink href="profile">
                         <div>
                             <i className="fa-solid fa-user"></i>
@@ -38,12 +43,11 @@ export const Sidebar = () => {
 
                     </NextLink>
 
-                    <NextLink href="help">
-                        <div>
-                            <i className="fa-solid fa-user"></i>
-                            Ayuda
-                        </div>
-                    </NextLink>
+                    <div onClick={onLogout}>
+                        <i className="fa-solid fa-arrow-right-from-bracket"></i>
+                        Salir
+                    </div>
+
                 </div>
             </div>
         </aside>
