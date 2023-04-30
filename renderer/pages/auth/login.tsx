@@ -49,7 +49,7 @@ const loginPage: NextPage = () => {
           </div>
           <button type="submit">Iniciar sesión</button>
           <div className="form-section">
-            <p>¿No tienes una cuenta? <NextLink href="/auth/register">Registrarme</NextLink> </p>
+            <p style={{ backgroundColor: 'transparent' }}>¿No tienes una cuenta? <NextLink href="/auth/register">Registrarme</NextLink> </p>
           </div>
         </div>
       </form>

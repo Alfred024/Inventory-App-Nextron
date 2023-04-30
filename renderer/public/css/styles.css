@@ -10,6 +10,7 @@
     padding: 0;
     margin: 3px;
     font-family: 'Roboto', sans-serif;
+    background-color: white;
 }
 
 body {
@@ -380,38 +381,38 @@ aside i {
 /* REGISTER PAGE */
 
 .form-box {
+    padding: 20px;
     max-width: 400px;
-    background: #f1f7fe;
-    /* overflow: hidden; */
+    background: var(--color-secondary);
     border-radius: 46px;
     color: #010101;
 }
 
 .form {
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     padding: 32px 24px 24px;
-    gap: 25px;
     text-align: center;
 }
 
 /*Form text*/
 .title {
+    background-color: transparent;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: white;
 }
 
 .subtitle {
     font-size: 1rem;
-    color: #666;
+    background-color: transparent;
+    color:white;
 }
 
 /*Inputs box*/
 .form-container {
     overflow: hidden;
     border-radius: 8px;
-    background-color: #fff;
     margin: 1rem 0 .5rem;
     width: 100%;
 }
@@ -430,14 +431,14 @@ aside i {
 .form-section {
     padding: 16px;
     font-size: .85rem;
-    background-color: #e0ecfb;
-    box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+    background-color: transparent;
 }
 
 .form-section a {
     font-weight: bold;
-    color: #097355;
+    color: black;
     transition: color .3s ease;
+    background-color: transparent;
 }
 
 .form-section a:hover {
@@ -456,6 +457,7 @@ aside i {
     font-weight: 600;
     cursor: pointer;
     transition: background-color .3s ease;
+    margin-top: 20px;
 }
 
 .form button:hover {
