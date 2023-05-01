@@ -485,3 +485,42 @@ aside i {
     }
 
 }
+
+/* ----------LOS MODALS------------- */
+.modalProductContainer{
+    padding: 20px;
+    max-width: 400px;
+    background: var(--color-secondary);
+    border-radius: 46px;
+    color: white;
+}
+.modalProductContainer input{
+    background-color: white;
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 90%;
+    font-size: .9rem;
+    padding: 0px 15px;
+}
+.modalProductContainer button{
+    background-color: #097355;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-top: 20px;
+}
+
+.fillProductData_container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+.fillProductData_container .productName_input{
+    grid-area: 1/1/2/3;
+}

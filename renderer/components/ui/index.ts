@@ -9,3 +9,4 @@ export * from './ClientCard'
 export * from './ClientCard';
 export * from './AddButton';
 export * from './SeachInput';
+export * from './ModalProduct'
