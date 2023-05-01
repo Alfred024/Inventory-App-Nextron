@@ -10,7 +10,6 @@
     padding: 0;
     margin: 3px;
     font-family: 'Roboto', sans-serif;
-    background-color: white;
 }
 
 body {
@@ -418,7 +417,8 @@ aside i {
 }
 
 .input {
-    background: none;
+    background-color: white;
+    border-radius: 50px;
     border: 0;
     outline: 0;
     height: 40px;

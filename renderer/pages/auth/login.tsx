@@ -32,7 +32,7 @@ const loginPage: NextPage = () => {
           showError && <p>No se ha podido iniciar sesión, intente de nuevo.</p>
         }
         <div className="form-box">
-          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'transparent' }}>
+          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'transparent', justifyContent:'center' }}>
             <Image src='/static/logo.png' alt="" width={100} height={100} style={{ backgroundColor: 'transparent' }}/>
             <span className="title">Inicio de sesión</span>
           </div>

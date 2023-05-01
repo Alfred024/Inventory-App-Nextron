@@ -6,6 +6,7 @@ import { AuthContext } from "../../context/auth";
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react";
 import { validations } from '../../utils';
+import Image from "next/image";
 
 const register = () => {
 
@@ -40,11 +41,14 @@ const register = () => {
   return (
     <AuthLayout title="Registro">
       <form onSubmit={handleSubmit(onRegisterForm)} noValidate className="form">
-      {
+        {
           showError && <p>{errorMessage}</p>
         }
         <div className="form-box">
-          <span className="title">Registro</span>
+          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'transparent', justifyContent:'center' }}>
+            <Image src='/static/logo.png' alt="" width={100} height={100} style={{ backgroundColor: 'transparent' }} />
+            <span className="title">Registro</span>
+          </div>
           <br />
           <span className="subtitle">Crea una cuenta totalmente gratis con tu correo.</span>
           <div className="form-container">

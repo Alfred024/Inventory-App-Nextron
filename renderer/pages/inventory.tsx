@@ -20,6 +20,11 @@ const inventory = () => {
           <InfoCard number={10} text='registrados'>
             <i className="fa-solid fa-list"></i>
           </InfoCard>
+
+          {/* Productos con bajo inventario (menor a 5) */}
+          <InfoCard number={10} text='con bajo inventario'>
+            <i className="fa-solid fa-close"></i>
+          </InfoCard>
         </div>
 
 
