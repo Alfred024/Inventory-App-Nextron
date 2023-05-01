@@ -9,7 +9,6 @@ import { validations } from '../../utils';
 
 const register = () => {
 
-  const router = useRouter();
   const { onRegisterUser } = useContext(AuthContext);
 
 
@@ -41,6 +40,9 @@ const register = () => {
   return (
     <AuthLayout title="Registro">
       <form onSubmit={handleSubmit(onRegisterForm)} noValidate className="form">
+      {
+          showError && <p>{errorMessage}</p>
+        }
         <div className="form-box">
           <span className="title">Registro</span>
           <br />
@@ -64,7 +66,7 @@ const register = () => {
           </div>
           <button type="submit">Registrarme</button>
           <div className="form-section">
-            <p>Ya tienes una cuenta? <NextLink href="/auth/login">Iniciar sesión</NextLink> </p>
+            <p style={{ backgroundColor: 'transparent' }}>Ya tienes una cuenta? <NextLink href="/auth/login">Iniciar sesión</NextLink> </p>
           </div>
         </div>
       </form>

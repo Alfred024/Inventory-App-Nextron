@@ -3,7 +3,7 @@ import { Layout, LineChartTest, TotalSalesTest, DoughnutTest, TopClientsTest } f
 
 function Home() {
   return (
-    <Layout title='ventas'>
+    <Layout title='Inicio'>
       <div className='flex-row space-between'>
         <div>
           <h1>Ventas</h1>

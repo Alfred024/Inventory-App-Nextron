@@ -6,6 +6,7 @@ import { validations } from "../../utils";
 import NextLink from 'next/link';
 import { NextPage } from "next";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 type FormData = {
   email: string,
@@ -31,7 +32,10 @@ const loginPage: NextPage = () => {
           showError && <p>No se ha podido iniciar sesión, intente de nuevo.</p>
         }
         <div className="form-box">
-          <span className="title">Inicio de sesión</span>
+          <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'transparent' }}>
+            <Image src='/static/logo.png' alt="" width={100} height={100} style={{ backgroundColor: 'transparent' }}/>
+            <span className="title">Inicio de sesión</span>
+          </div>
           <br />
           <span className="subtitle">Ingresa a tu cuenta y empieza a gestionar tu empresa.</span>
           <div className="form-container">
