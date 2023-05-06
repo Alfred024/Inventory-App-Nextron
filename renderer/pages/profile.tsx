@@ -1,8 +1,9 @@
-import { Layout } from "../components"
+import { Layout, ModalProduct } from "../components"
 
 const profile = () => {
     return (
-        <Layout title="Perfil">profile</Layout>
+        <Layout title="Perfil">
+        </Layout>
     )
 }
 
