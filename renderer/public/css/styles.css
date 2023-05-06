@@ -500,6 +500,13 @@ aside i {
     color: white;
     z-index: 1;
 }
+/* .modalHeader{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    border-top: solid white 20px;
+    width: 200%;
+} */
 .modalContainer{
     padding: 20px;
     max-width: 400px;
@@ -517,9 +524,16 @@ aside i {
     border-radius: 50px;
     border: none;
     height: 40px;
-    width: 90%;
+    width: 80%;
     font-size: .9rem;
     padding: 0px 15px;
+    margin: 7px 2px;
+}
+.modalContainer .productName_input{
+    width: 90%;
+}
+.modalContainer input:focus{
+
 }
 .modalContainer button{
     background-color: #097355;
@@ -533,8 +547,9 @@ aside i {
     transition: background-color .3s ease;
     margin-top: 20px;
 }
-.modalContainer img{
-    width: 300px;
+.modalContainer .imgContainer{
+    max-width: 300px;
+    background-size: contain;
 }
 
 /* Estilos ModalProduct */
@@ -552,4 +567,10 @@ aside i {
     display: flex;
     flex-direction: column;
     place-items: center;
+}
+
+/* Estilos ModalSales */
+.infoProduct{
+    display: flex;
+    flex-direction: column;
 }

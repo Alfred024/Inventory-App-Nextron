@@ -15,7 +15,7 @@ export const ModalProduct = ({showModal, closeModal}) => {
                     
 
                     <form className="fillProductData_container" method="post">
-                        <input className="productName_input" type="text" placeholder="Nombre del producto..." />
+                        <input className="productName_input"  type="text" placeholder="Nombre del producto..." />
 
                         <div className="quantityContainer">
                             <label>Cantidad</label>

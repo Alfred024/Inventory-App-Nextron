@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Layout, LineChartTest, TotalSalesTest, DoughnutTest, TopClientsTest, ModalProduct } from '../components';
+import { ModalSales } from '../components/ui/ModalSales';
+import { ModalClient } from '../components/ui/ModalClient';
 
 function Home() {
   const [showModal, showModalState] = useState(false);
@@ -18,7 +20,8 @@ function Home() {
           <button
             onClick={() => showModalState(true)}
             className='btn-primary'>Agregar venta</button>
-          <ModalProduct
+            
+          <ModalSales
             showModal={showModal}
             closeModal={() => showModalState(false)}
           />
