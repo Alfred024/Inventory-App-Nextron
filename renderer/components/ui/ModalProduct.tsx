@@ -4,7 +4,7 @@ export const ModalProduct = ({showModal, closeModal}) => {
     if(showModal)
         return(
             <div className="ModalBackground">
-                <div className="modalProductContainer">
+                <div className="modalContainer">
                     <button 
                         onClick={closeModal}
                         className="closeModal">

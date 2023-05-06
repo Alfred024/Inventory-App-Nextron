@@ -500,19 +500,19 @@ aside i {
     color: white;
     z-index: 1;
 }
-.closeModal{
-    position: absolute;
-    top: 50px;
-    right: 20px;
-}
-.modalProductContainer{
+.modalContainer{
     padding: 20px;
     max-width: 400px;
     background: var(--color-secondary);
     border-radius: 46px;
     color: white;
 }
-.modalProductContainer input{
+.closeModal{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+}
+.modalContainer input{
     background-color: white;
     border-radius: 50px;
     border: none;
@@ -521,7 +521,7 @@ aside i {
     font-size: .9rem;
     padding: 0px 15px;
 }
-.modalProductContainer button{
+.modalContainer button{
     background-color: #097355;
     color: #fff;
     border: none;
@@ -533,7 +533,11 @@ aside i {
     transition: background-color .3s ease;
     margin-top: 20px;
 }
+.modalContainer img{
+    width: 300px;
+}
 
+/* Estilos ModalProduct */
 .fillProductData_container{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -541,4 +545,11 @@ aside i {
 }
 .fillProductData_container .productName_input{
     grid-area: 1/1/2/3;
+}
+
+/* Estilos ModalClient */
+.modalClient{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
 }
