@@ -1,7 +1,14 @@
-import React from 'react';
-import { Layout, LineChartTest, TotalSalesTest, DoughnutTest, TopClientsTest } from '../components';
+import React, { useState } from 'react';
+import { Layout, LineChartTest, TotalSalesTest, DoughnutTest, TopClientsTest, ModalProduct } from '../components';
+import { ModalSales } from '../components/ui/ModalSales';
+import { ModalClient } from '../components/ui/ModalClient';
 
 function Home() {
+  const [showModal, showModalState] = useState(false);
+  const modalState = () =>{
+    return true;
+  }
+
   return (
     <Layout title='Inicio'>
       <div className='flex-row space-between'>
@@ -9,7 +16,15 @@ function Home() {
           <h1>Ventas</h1>
         </div>
         <div>
-          <button className='btn-primary'>Agregar venta</button>
+          { /*Botón que creará el modal */ }
+          <button
+            onClick={() => showModalState(true)}
+            className='btn-primary'>Agregar venta</button>
+            
+          <ModalSales
+            showModal={showModal}
+            closeModal={() => showModalState(false)}
+          />
         </div>
       </div>
       <div className='graphicsContainer'>
