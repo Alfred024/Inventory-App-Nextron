@@ -3,8 +3,20 @@ import { Layout } from "../components";
 import { UserCard } from "../components/ui/UserCard";
 import { OptionsCard } from "../components/ui/OptionsCard";
 import { User } from "../models";
+import { useState } from "react";
+import { PasswordOptions } from "../components/ui/PasswordOptions";
 
 const profile = () => {
+
+  const [show, setShow] = useState(false);
+
+  const showPassword = ( show ) => {
+
+    setShow(show);
+
+  }
+
+
   return (
     <Layout title="Perfil">
       <h1 id='profile-header'>Perfil</h1>
@@ -41,26 +53,7 @@ const profile = () => {
             </div>
           </OptionsCard>
           <OptionsCard title={'Cambiar contraseña'}>
-            <div>
-            <form action="">
-                <label htmlFor="actual">Contraseña actual:</label>
-                <span className="search-input">
-                      <input type="password" name="actual" placeholder="*****" className="form-input" />
-                </span>
-
-                <label htmlFor="nueva">Contraseña nueva:</label>
-                <span className="search-input">
-                  <input type="password" name="nueva" placeholder="*****" className="form-input"/>
-                </span>
-
-                <label htmlFor="repetir">Repetir contraseña:</label>
-                <span className="search-input">
-                  <input type="password" name="repetir" placeholder="*****" className="form-input"/>
-                </span>
-
-                <button type="submit" className="btn-primary" id="btn-center">Aceptar</button>
-              </form>
-            </div>
+            <PasswordOptions/>
           </OptionsCard>
           <OptionsCard title={'Contraseña'}>
             <div>
