@@ -574,3 +574,173 @@ aside i {
     display: flex;
     flex-direction: column;
 }
+
+
+/*----------Profile------------*/
+
+/* .photo-profile-container{
+    border: solid 2px black;
+} */
+
+
+.separator{
+    display: flex;
+    gap: 60px;
+}
+
+.usercard-container{
+    align-items: center;
+    width: 250px;
+    height: 80vh;
+    margin: 50px 0px 12px 50px;
+    border-radius: 15px;
+    padding: 3px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.item{
+    position: relative;
+    height: 245px;
+}
+
+.item::before{
+    content: "";
+    display: block;
+    background: var(--color-secondary);
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+    z-index: -1;
+}
+
+.photo-profile-container{
+    text-align: center;
+    padding: 9px;
+}
+
+.usercard-body{
+    font-size: 16px;
+    text-align: justify;
+}
+
+#profile-section{
+    width: 335px;
+}
+
+#pic-profile{
+    clip-path: circle();
+}
+
+#rol{
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#email{
+    font-weight: 700;
+    margin: 0;
+}
+
+#description{
+    padding-top: 15px;
+    color: gray;
+    font-size: 15px;
+    width: 96%;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+#text-area{
+    text-align: justify;
+    font-size: 15px;
+    position: relative;
+    width: 96%;
+    height: 150px;
+    resize: none;
+    border: 1px solid var(--color-secondary);
+    border-radius: 3px;
+    padding-left: 1px;
+}
+
+#btn-edit{
+    position: relative;
+    left: 90%;
+    color: #F3F4FE;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+#edit-container:hover #btn-edit{
+    
+    color: var(--color-primary);
+}
+
+#edit-container{
+    padding: 1px 1px 1px 2px;
+}
+
+
+.button-perfil{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.options-container{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-shrink: 1;
+}
+
+.optioncard-container{
+    width: 250px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 10px 10px -6px black; 
+}
+
+#password-icon{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    right: 0px;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+span .form-input{
+    padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .separator{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .options-container{
+        justify-content: center;
+    }
+
+    #profile-section{
+        width: auto;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .usercard-container{
+        margin: 50px 0px 12px 0px
+    }
+  }
+
